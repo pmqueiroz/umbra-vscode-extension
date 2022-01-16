@@ -12,3 +12,10 @@ def main() {
    out("Hello, $world!")
 }
 ```
+
+## Features
+
+### Syntax Highlight
+
+![syntax-highlight-example](./assets/example.png)
+
