@@ -1,0 +1,39 @@
+{
+    "name": "umbra-syntax-highlight",
+    "description": "Syntax highlighting for Umbra Language",
+    "displayName": "Umbra Syntax Highlight",
+    "publisher": "pmqueiroz",
+    "readme": "README.md",
+    "version": "0.0.1",
+    "license": "MIT",
+    "author": {
+        "name": "Pedro Queiroz",
+        "url": "https://pmqueiroz.com"
+    },
+    "engines": {
+        "vscode": "^1.63.0"
+    },
+    "keywords": [
+        "umbra",
+        "vscode",
+        "language",
+        "highlight",
+        "syntax"
+    ],
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "Umbra",
+            "aliases": ["Umbra Language", "Umbra"],
+            "extensions": [".umb"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "Umbra",
+            "scopeName": "source.umbra",
+            "path": "./syntaxes/Umbra.tmLanguage.json"
+        }]
+    }
+}

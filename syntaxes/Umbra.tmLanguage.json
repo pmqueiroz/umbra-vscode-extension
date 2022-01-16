@@ -1,0 +1,57 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Umbra Language",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#operators"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.Umbra",
+					"match": "\\b(if|while|for|return|const|var|def|&def|package)\\b"
+				},
+				{
+					"name": "support.type.Umbra",
+					"match": "\\b(string|number|boolean)\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.Umbra",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.Umbra",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comments": {
+			"name": "comment.line.number-sign",
+			"begin": "#",
+			"end": "$"
+		},
+		"operators": {
+			"patterns": [
+				{
+					"match": "(->)",
+					"name": "keyword.control.assignment.Umbra"
+				}
+			]
+		}
+	},
+	"scopeName": "source.umbra"
+}
