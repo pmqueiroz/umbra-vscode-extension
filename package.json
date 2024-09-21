@@ -10,6 +10,7 @@
         "name": "Pedro Queiroz",
         "url": "https://pmqueiroz.com"
     },
+    "icon": "icon.png",
     "engines": {
         "vscode": "^1.63.0"
     },
