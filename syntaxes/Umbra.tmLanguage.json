@@ -9,6 +9,9 @@
 			"include": "#strings"
 		},
 		{
+			"include": "#numbers"
+		},
+		{
 			"include": "#comments"
 		},
 		{
@@ -20,11 +23,11 @@
 			"patterns": [
 				{
 					"name": "keyword.control.Umbra",
-					"match": "\\b(if|while|for|return|const|var|def|&def|package)\\b"
+					"match": "\\b(not|and|else|def|for|if|null|or|print|return|this|true|false|const|mut|break|module)\\b"
 				},
 				{
 					"name": "support.type.Umbra",
-					"match": "\\b(string|number|boolean)\\b"
+					"match": "\\b(str|arr|hashmap|num)\\b"
 				}
 			]
 		},
@@ -39,6 +42,10 @@
 				}
 			]
 		},
+		"numbers": {
+			"name": "constant.numeric.Umbra",
+			"match": "\\b\\d+(\\.\\d+)?\\b"
+		},
 		"comments": {
 			"name": "comment.line.number-sign",
 			"begin": "#",
@@ -47,7 +54,11 @@
 		"operators": {
 			"patterns": [
 				{
-					"match": "(->)",
+					"match": "(\\+|\\-|\\*|\\/|==|!=|<|>|<=|>=|&&|\\|\\|)",
+					"name": "keyword.operator.Umbra"
+				},
+				{
+					"match": "(=)",
 					"name": "keyword.control.assignment.Umbra"
 				}
 			]

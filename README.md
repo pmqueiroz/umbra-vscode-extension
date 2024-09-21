@@ -3,10 +3,10 @@
 ```umb
 # small umbra snippet code
 
-package umbra_test
+module umbra_test
 
-const string world -> "World"
-const number num -> 23
+const string world = "World"
+const number num = 23
 
 def main() {
    out("Hello, $world!")
@@ -18,4 +18,3 @@ def main() {
 ### Syntax Highlight
 
 ![syntax-highlight-example](./assets/example.png)
-

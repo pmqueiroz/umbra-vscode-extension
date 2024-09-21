@@ -4,7 +4,7 @@
     "displayName": "Umbra Syntax Highlight",
     "publisher": "pmqueiroz",
     "readme": "README.md",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "license": "MIT",
     "author": {
         "name": "Pedro Queiroz",
@@ -27,7 +27,7 @@
         "languages": [{
             "id": "Umbra",
             "aliases": ["Umbra Language", "Umbra"],
-            "extensions": [".umb"],
+            "extensions": [".umb", ".u"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
