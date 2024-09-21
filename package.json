@@ -11,6 +11,10 @@
         "url": "https://pmqueiroz.com"
     },
     "icon": "icon.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/umbra-lang/vscode-umbra"
+    },
     "engines": {
         "vscode": "^1.63.0"
     },
