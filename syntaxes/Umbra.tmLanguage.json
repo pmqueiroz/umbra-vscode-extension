@@ -23,7 +23,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.Umbra",
-					"match": "\\b(not|and|else|def|for|if|null|or|stdout|stderr|return|this|true|false|const|mut|break|module)\\b"
+					"match": "\\b(not|and|else|def|for|if|null|or|stdout|stderr|return|this|true|false|const|mut|break|pub|import)\\b"
 				},
 				{
 					"name": "support.type.Umbra",
@@ -54,7 +54,7 @@
 		"operators": {
 			"patterns": [
 				{
-					"match": "(\\+|\\-|\\*|\\/|==|!=|<|>|<=|>=|&&|\\|\\|)",
+					"match": "(\\+|\\-|\\*|\\/|==|!=|<|>|<=|>=|&&|\\|\\||::|:)",
 					"name": "keyword.operator.Umbra"
 				},
 				{
