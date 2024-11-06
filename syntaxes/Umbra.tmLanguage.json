@@ -23,7 +23,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.Umbra",
-					"match": "\\b(not|and|else|def|for|if|null|or|stdout|stderr|return|this|true|false|const|mut|break|continue|pub|import|any|range)\\b"
+					"match": "\\b(not|and|else|def|for|if|null|or|stdout|stderr|return|this|true|false|const|mut|break|continue|pub|import|any|range|NaN)\\b"
 				},
 				{
 					"name": "support.type.Umbra",
