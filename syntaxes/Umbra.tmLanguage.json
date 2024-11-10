@@ -23,11 +23,11 @@
 			"patterns": [
 				{
 					"name": "keyword.control.Umbra",
-					"match": "\\b(not|and|else|def|for|if|null|or|stdout|stderr|return|this|true|false|const|mut|break|continue|pub|import|any|range|NaN)\\b"
+					"match": "\\b(not|and|else|def|for|if|null|or|stdout|stderr|return|this|true|false|const|mut|break|continue|pub|import|range|NaN)\\b"
 				},
 				{
 					"name": "support.type.Umbra",
-					"match": "\\b(str|arr|hashmap|num)\\b"
+					"match": "\\b(str|arr|hashmap|num|any|char|fun)\\b"
 				}
 			]
 		},
@@ -35,6 +35,17 @@
 			"name": "string.quoted.double.Umbra",
 			"begin": "\"",
 			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.Umbra",
+					"match": "\\\\."
+				}
+			]
+		},
+		"character": {
+			"name": "constant.character.Umbra",
+			"begin": "'",
+			"end": "'",
 			"patterns": [
 				{
 					"name": "constant.character.escape.Umbra",
