@@ -26,7 +26,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control.Umbra",
-					"match": "\\b(not|and|else|def|for|if|null|or|stdout|stderr|return|this|true|false|const|mut|break|continue|pub|import|range|NaN|typeof|enum|match|bool)\\b"
+					"match": "\\b(not|and|else|def|for|if|null|or|stdout|stderr|return|this|true|false|const|mut|break|continue|pub|import|range|NaN|typeof|enum|match|bool|enumof)\\b"
 				},
 				{
 					"name": "support.type.Umbra",
